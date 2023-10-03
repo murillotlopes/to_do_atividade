@@ -4,7 +4,9 @@
  */
 package com.murillo.to_do.service;
 
-import com.murillo.to_do.repositories.TarefaRepository;
+import java.util.List;
+import java.util.Arrays;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -13,6 +15,9 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.mockito.Mockito;
 
+import com.murillo.to_do.repositories.TarefaRepository;
+import com.murillo.to_do.model.entity.Tarefa;
+
 /**
  *
  * @author murillo
@@ -20,17 +25,30 @@ import org.mockito.Mockito;
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
 public class TarefaServiceTest {
-    
+
     @SpyBean
     TarefaService service;
-    
+
     @MockBean
     TarefaRepository repository;
-    
+
     @Test
-    public void validaInsercao(){
-        
-        
-        Mockito.when(repository.save())
+    public void testFindAll() {
+
+    }
+
+    @Test
+    public void validaInsercao() {
+
+    }
+
+    @Test
+    public void validaDelecao() {
+
+    }
+
+    @Test
+    public void validaAtualizacao() {
+
     }
 }
